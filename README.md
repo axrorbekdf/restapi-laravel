@@ -1,4 +1,4 @@
-# Matematik amallar
+# Laravel uchun oddiy REST API package
 
 Yuklab olish
 ```
@@ -39,9 +39,9 @@ class User{
 }
 ```
 
-Route
+Request
 ```
-http://127.0.0.1:8000/api/users
+GET: http://127.0.0.1:8000/api/users
 ```
 Response
 ```php
