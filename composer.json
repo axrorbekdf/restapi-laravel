@@ -1,0 +1,29 @@
+{
+    "name": "ahrorbekdf/restapi-laravel",
+    "version":"1.0",
+    "description": "Restapi Laravel",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RestapiLaravel\\": "/"
+        },
+        "files": [
+            "Helpers/helpers.php"
+        ]
+    },
+    "require": {},
+    "extra":{
+        "laravel":{
+            "providers":[
+                "RestapiLaravel\\RestapiLaravelServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan vendor:publish --tag=started-resources --force"
+        ]
+    }
+}
