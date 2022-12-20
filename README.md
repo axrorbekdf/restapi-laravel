@@ -10,7 +10,7 @@ Publishing
 php artisan vendor:publish --tag=started-resources --force
 ```
 
-Ishlatish! Har bir model uchun App\Model\User modeli kabi Resources yaratiladi.
+Ishlatish! Har bir model uchun App\Model\User modelini resource kabi Resources yaratiladi.
 ```php
 
 <?php 

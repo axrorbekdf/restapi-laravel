@@ -25,7 +25,7 @@ class RestapiLaravelServiceProvider extends ServiceProvider
     public function boot()
     {
         Route::middleware('api')
-            ->prefix('api')
+            ->prefix('api/v1')
             ->group(__DIR__.'/routes/api.php');
 
         Route::middleware('web')
